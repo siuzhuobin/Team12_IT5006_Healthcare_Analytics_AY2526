@@ -11,7 +11,7 @@ def target_analysis():
     X, y, df = load_data()
 
     target_counts = y['readmitted'].value_counts()
-    dd = (pd.DataFrame(target_counts.items(), columns=["Category", "Count"]).assign(Category=lambda df: df["Category"].str.replace("<", "&lt;")).set_index("Category"))
+    dd = (pd.DataFrame(target_counts.items(), columns=["Category", "Count"]).assign(Category=lambda df: df["Category"].apply(lambda x: f"`{x}`")).set_index("Category"))
     target_pct = y['readmitted'].value_counts(normalize=True) * 100
     dd["Percentage"] = (dd["Count"]/dd["Count"].sum()*100).apply(lambda x: f"{x: .1f}%")
 
