@@ -1,27 +1,4 @@
-# Phase 1 files 
-## Phase 1 Streanlit dashboard files
-dbMain.py - main file for generating paged views in Streamlit 
+# Phase 2 
 
-dbShaeed.py - shared function for loading database across different pages 
-
-dbCategoricalFeatures.py - categorical figure page of Stramlit dashboard
-
-dbFeatureCorrelations.py - feature correlations page of Streamlit dasboard
-
-dbNumericalFeatures.py - numerical features page of Streamlit dashboard 
-
-dbTargetAnalysis.py - target feature analysis page of Streamlit dashboard 
-
-diabetes_features.csv - feature fields of raw US-130 Diabetes dataset 
-
-diabetes_target.csv - target field of dataset 
-
-requirements.txt - packages to be installed on Streamlit server for online deployment
-
-## Other raw Python files
-EDA.ipyb - raw EDA Jupyter notebook 
-
-regression-notebbok-v1.ipynb - regression model
-
-## Other files 
-Team12_Mileston1_IT5006_AY2526.pdf - consolidaed report.pdf
+Report.pdf is the .pdf of the submitted report. 
+phase2Consolidated.ipynb is the consolidated phase 2 ipynb. It may be run directly from end to end. To avoid having to run lengthy calculations repeatedly, we have pickled and saved some of the results for the longer calculations. Unfortunately two of the pickle files exceed the 25 MB limit for free Github so the calculation will be performed from scratch, and may take approximately 20 minutes to run. 
